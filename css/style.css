@@ -25,6 +25,10 @@ main{
   width: 80%;
   margin: 0 auto;
 }
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
 .btn{
   text-decoration: none;
   color: var(--primary-color);
@@ -102,7 +106,7 @@ nav .menu-icon i{
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(2,1fr);
-  padding: 60px 60px;
+  padding: 60px 20px;
 }
 .top-section .header-content{
   display: flex;
@@ -140,6 +144,10 @@ nav .menu-icon i{
   background:#fff;
   padding: 20px 20px;
   box-shadow: var(--shadow);
+}
+.player h2{
+  font-size: 30px;
+  font-weight: bold;
 }
 .player img{
   width: 100%;
@@ -180,7 +188,7 @@ nav .menu-icon i{
     starting blogs section
 ------------------------------ */
 .blogs{
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .blogs h1{
   text-align: center;
@@ -209,7 +217,7 @@ nav .menu-icon i{
     starting sponsers section
 ------------------------------ */
 .our-sponcers{
-  margin-top: 60px;
+  margin-top: 90px;
   text-align: center;
   background: var(--primary-color);
   padding: 60px 40px;
@@ -252,6 +260,12 @@ footer{
   color: rgba(105, 103, 103, 0.8);
   padding: 10px;
   margin-bottom: 20px;
+  margin-right: 20px;
+  transition: all 0.5s;
+}
+.social-links i:hover{
+  background: rgba(105, 103, 103, 0.8);
+  color: var(--primary-color);
 }
 .copyright{
   font-weight: bold;
@@ -335,6 +349,9 @@ footer{
     use of media query for mobile phone
 ------------------------------ */
 @media (max-width:650px){
+  nav .logo{
+    display: none;
+  }
   .header-content h1{
     font-size: 35px;
   }
