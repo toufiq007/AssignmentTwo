@@ -11,7 +11,6 @@
   --header-color:#2D25A0;
   --shadow : 0 0 10px rgba(0,0,0,0.3)
 }
-
 /*-----------------------------
     Websites Common styles
 ------------------------------ */
@@ -127,9 +126,6 @@ nav .menu-icon i{
 /*-----------------------------
     ending header section
 ------------------------------ */
-
-
-
 /*-----------------------------
     starting player section
 ------------------------------ */
@@ -155,7 +151,6 @@ nav .menu-icon i{
 /*-----------------------------
     ending header section
 ------------------------------ */
-
 /*-----------------------------
     starting highlight section
 ------------------------------ */
@@ -211,8 +206,6 @@ nav .menu-icon i{
 /*-----------------------------
     ending blogs section
 ------------------------------ */
-
-
 /*-----------------------------
     starting sponsers section
 ------------------------------ */
@@ -231,11 +224,9 @@ nav .menu-icon i{
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
 }
-
 /*-----------------------------
     ending sponsers section
 ------------------------------ */
-
 /*-----------------------------
     starting footer section
 ------------------------------ */
@@ -273,8 +264,6 @@ footer{
 /*-----------------------------
     ending footer section
 ------------------------------ */
-
-
 /*-----------------------------
     Use Of media query for tablet
 ------------------------------ */
@@ -343,8 +332,6 @@ footer{
     height: auto;
   }
 }
-
-
 /*-----------------------------
     use of media query for mobile phone
 ------------------------------ */
@@ -360,7 +347,6 @@ footer{
     margin-top: 20px;
     grid-template-columns: repeat(1,1fr);
   }
-  
   .highlight-section{
     grid-template-columns: repeat(1,1fr);
   }
@@ -378,8 +364,6 @@ footer{
     width: 300px;
   }
 }
-
-
 /*-----------------------------
     designed by Mostafizur Rahman Limon
 ------------------------------ */
