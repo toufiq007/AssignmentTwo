@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
-/* css variable */
+/*-----------------------------
+    Root Variables
+------------------------------ */
 :root{
   --primary-color:#fff;
   --secondary-color:#ededed;
   --dark-color:#000;
   --button-color:#E02C6D;
   --header-color:#2D25A0;
-  /* --shadow:0 1px 5px rgba(104,104,104,0.8); */
   --shadow : 0 0 10px rgba(0,0,0,0.3)
 }
 
-/* common styles */
+/*-----------------------------
+    Websites Common styles
+------------------------------ */
 body{
   margin: 0;
   padding: 0;
@@ -19,7 +22,7 @@ body{
   background: var(--secondary-color);
 }
 main{
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 .btn{
@@ -37,24 +40,33 @@ main{
   padding: 20px 20px;
   border-radius: 30px;
 }
-/* starting header section */
+/*-----------------------------
+    starting header section
+------------------------------ */
 header{
   background: var(--header-color);
   min-height: 700px;
+  padding: 10px 60px;
 }
-/* navigation area */
+header main{
+  width: 100%;
+}
+/* ---------- navigation area -------------*/
 nav{
   display: flex;
   height: 60px;
-  /* border-bottom: 2px solid #ccc; */
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 40px 50px;
+  padding: 40px 0;
 }
 nav .logo{
   color: var(--primary-color);
   text-decoration: none;
   font-size: 30px;
+  transition: all 0.5s;
+}
+nav .logo:hover{
+  color: rgb(112, 104, 104);
 }
 nav ul{
   display: flex;
@@ -63,12 +75,20 @@ nav ul{
 }
 nav ul li{
   list-style: none;
-  padding-right: 50px;
+  box-sizing: border-box;
+  padding-right: 20px;
   padding-left: 20px;
 }
 nav ul li a{
   text-decoration: none;
   color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+nav ul li a:hover{
+  color: rgb(112, 104, 104);
+
 }
 input[type='checkbox']{
   display: none;
@@ -77,14 +97,14 @@ nav .menu-icon i{
   display: none;
 }
 
-/* top section */
+/*--------- top section ----------------*/
 .top-section{
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(2,1fr);
   padding: 60px 60px;
 }
-.header-content{
+.top-section .header-content{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -100,16 +120,20 @@ nav .menu-icon i{
 .top-section .header-image:hover img{
   transform: rotate(45deg);
 }
-/* ending header section */
+/*-----------------------------
+    ending header section
+------------------------------ */
 
 
 
-/* starting player section */
+/*-----------------------------
+    starting player section
+------------------------------ */
 .players-section{
   margin-top: 80px;
   margin-bottom: 50px;
   display: grid;
-  grid-gap: 25px;
+  grid-gap: 40px;
   grid-template-columns: repeat(3,1fr);
 }
 .player{
@@ -120,9 +144,13 @@ nav .menu-icon i{
 .player img{
   width: 100%;
 }
-/* ending player section */
+/*-----------------------------
+    ending header section
+------------------------------ */
 
-/* starting hightlights section */
+/*-----------------------------
+    starting highlight section
+------------------------------ */
 .highlight-section{
   margin-top: 130px;
   display: grid;
@@ -144,9 +172,13 @@ nav .menu-icon i{
 .highlight-image img{
   width: 100%;
 }
-/* ending hightlights section */
+/*-----------------------------
+    ending header section
+------------------------------ */
 
-/* Starting blogs section */
+/*-----------------------------
+    starting blogs section
+------------------------------ */
 .blogs{
   margin-top: 80px;
 }
@@ -168,8 +200,14 @@ nav .menu-icon i{
   width: 100%;
   height: 400px;
 }
-/* Ending blogs section */
-/* Our Sponcers Section */
+/*-----------------------------
+    ending blogs section
+------------------------------ */
+
+
+/*-----------------------------
+    starting sponsers section
+------------------------------ */
 .our-sponcers{
   margin-top: 60px;
   text-align: center;
@@ -186,7 +224,13 @@ nav .menu-icon i{
   grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
 }
 
-/* starting Footer Section */
+/*-----------------------------
+    ending sponsers section
+------------------------------ */
+
+/*-----------------------------
+    starting footer section
+------------------------------ */
 footer{
   text-align: center;
   margin-top: 100px;
@@ -212,14 +256,21 @@ footer{
 .copyright{
   font-weight: bold;
 }
-/* ending Footer Section */
+/*-----------------------------
+    ending footer section
+------------------------------ */
 
 
-/* use of media query */
+/*-----------------------------
+    Use Of media query for tablet
+------------------------------ */
 
 @media (max-width:840px){
   .header-content{
     align-items: center;
+  }
+  nav{
+    width: 100%;
   }
   nav .menu-icon i{
     display: block;
@@ -229,7 +280,7 @@ footer{
   }
   nav ul{
     position: fixed;
-    top: 70px;
+    top: 120px;
     left: -120%;
     display: block;
     width: 100%;
@@ -250,8 +301,12 @@ footer{
     left: 0;
   }
   .top-section{
-    width: 100%;
+    width: 80%;
     grid-template-columns: repeat(1,1fr);
+  }
+  .top-section img{
+    margin-top: 20px;
+    width: 50%;
   }
   .players-section{
     grid-template-columns: repeat(2,1fr);
@@ -275,6 +330,10 @@ footer{
   }
 }
 
+
+/*-----------------------------
+    use of media query for mobile phone
+------------------------------ */
 @media (max-width:650px){
   .header-content h1{
     font-size: 35px;
@@ -302,3 +361,8 @@ footer{
     width: 300px;
   }
 }
+
+
+/*-----------------------------
+    designed by Mostafizur Rahman Limon
+------------------------------ */
