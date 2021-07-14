@@ -141,12 +141,24 @@ nav .menu-icon i{
   padding: 20px 20px;
   box-shadow: var(--shadow);
 }
+.player-image{
+  overflow: hidden;
+}
 .player h2{
   font-size: 30px;
   font-weight: bold;
 }
+.player p{
+  line-height: 1.6;
+  font-weight: 400;
+}
 .player img{
   width: 100%;
+  transition: all 0.5s;
+}
+.player img:hover {
+  transform: scale(1.3);
+  overflow:hidden;
 }
 /*-----------------------------
     ending header section
@@ -172,8 +184,19 @@ nav .menu-icon i{
   color: var(--dark-color);
   margin-bottom: 0;
 }
+.highlight-content p{
+  line-height: 1.6;
+}
 .highlight-image img{
   width: 100%;
+  transition: all 0.5s;
+}
+.highlight-image{
+  overflow: hidden;
+  
+}
+.highlight-image:hover img{
+  transform: scale(1.3);
 }
 /*-----------------------------
     ending header section
@@ -202,6 +225,9 @@ nav .menu-icon i{
 .blog img{
   width: 100%;
   height: 400px;
+}
+.blog-content p{
+  line-height: 1.6;
 }
 /*-----------------------------
     ending blogs section
