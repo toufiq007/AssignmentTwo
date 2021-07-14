@@ -225,6 +225,13 @@ nav .menu-icon i{
 .blog img{
   width: 100%;
   height: 400px;
+  transition: all 0.5s;
+}
+.blog-image{
+  overflow: hidden;
+}
+.blog-image img:hover{
+  transform: scale(1.3);
 }
 .blog-content p{
   line-height: 1.6;
