@@ -96,23 +96,23 @@ nav .menu-icon i{
 
 
 
-/* starting blog section */
-.blogs-section{
+/* starting player section */
+.players-section{
   margin-top: 80px;
   margin-bottom: 50px;
   display: grid;
   grid-gap: 25px;
   grid-template-columns: repeat(3,1fr);
 }
-.blog{
+.player{
   background:#fff;
   padding: 20px 20px;
   box-shadow: var(--shadow);
 }
-.blog img{
+.player img{
   width: 100%;
 }
-/* ending blog section */
+/* ending player section */
 
 /* starting hightlights section */
 .highlight-section{
@@ -138,6 +138,30 @@ nav .menu-icon i{
   width: 100%;
 }
 /* ending hightlights section */
+
+/* Starting blogs section */
+.blogs{
+  margin-top: 80px;
+}
+.blogs h1{
+  text-align: center;
+  font-size: 50px;
+}
+.our-blogs{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+}
+.blog{
+  background: var(--primary-color);
+  padding: 20px 20px;
+  box-shadow: var(--shadow);
+}
+.blog img{
+  width: 100%;
+  height: 400px;
+}
+/* Ending blogs section */
 
 
 /* starting Footer Section */
@@ -207,7 +231,7 @@ footer{
     width: 100%;
     grid-template-columns: repeat(1,1fr);
   }
-  .blogs-section{
+  .players-section{
     grid-template-columns: repeat(2,1fr);
   }
   .highlight-section{
@@ -220,13 +244,20 @@ footer{
   .highlight-content{
     min-height: 400px;
   }
+  .our-blogs {
+    grid-template-columns: 1fr;
+  }
+  .blog img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width:650px){
   .header-content h1{
     font-size: 35px;
   }
-  .blogs-section{
+  .players-section{
     width: 100%;
     margin-top: 20px;
     grid-template-columns: repeat(1,1fr);
