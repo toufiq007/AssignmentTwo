@@ -19,7 +19,7 @@ body{
   background: var(--secondary-color);
 }
 main{
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 .btn{
@@ -37,7 +37,6 @@ main{
   padding: 20px 20px;
   border-radius: 30px;
 }
-
 /* starting header section */
 header{
   background: var(--header-color);
@@ -47,10 +46,15 @@ header{
 nav{
   display: flex;
   height: 60px;
-  border-bottom: 2px solid #ccc;
+  /* border-bottom: 2px solid #ccc; */
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 40px 50px;
+}
+nav .logo{
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 30px;
 }
 nav ul{
   display: flex;
@@ -60,6 +64,7 @@ nav ul{
 nav ul li{
   list-style: none;
   padding-right: 50px;
+  padding-left: 20px;
 }
 nav ul li a{
   text-decoration: none;
@@ -75,10 +80,9 @@ nav .menu-icon i{
 /* top section */
 .top-section{
   display: grid;
-  grid-gap: 30px;
-  /* grid-template-columns: repeat(auto-fit,minmax(500px,1fr)); */
+  grid-gap: 20px;
   grid-template-columns: repeat(2,1fr);
-  padding: 60px 0;
+  padding: 60px 60px;
 }
 .header-content{
   display: flex;
@@ -90,7 +94,11 @@ nav .menu-icon i{
   color: var(--primary-color);
 }
 .top-section .header-image img{
+  transition: all 0.3s;
   width: 100%;
+}
+.top-section .header-image:hover img{
+  transform: rotate(45deg);
 }
 /* ending header section */
 
@@ -119,7 +127,6 @@ nav .menu-icon i{
   margin-top: 130px;
   display: grid;
   grid-gap: 60px;
-  /* grid-template-columns: repeat(auto-fit,minmax(400px,1fr)); */
   grid-template-columns: repeat(2,1fr);
 }
 .highlight-content{
@@ -162,7 +169,22 @@ nav .menu-icon i{
   height: 400px;
 }
 /* Ending blogs section */
-
+/* Our Sponcers Section */
+.our-sponcers{
+  margin-top: 60px;
+  text-align: center;
+  background: var(--primary-color);
+  padding: 60px 40px;
+  box-shadow: var(--shadow);
+}
+.our-sponcers h1{
+  font-size: 40px;
+}
+.icons{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
 
 /* starting Footer Section */
 footer{
